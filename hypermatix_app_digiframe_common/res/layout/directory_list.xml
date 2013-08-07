@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2011 Hypermatix Limited
+
+     This file can not be used in any way, distributed, or 
+     modified, without the express written permission of Hypermatix Ltd.
+-->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="#ff000000">
+  
+ 	<ListView android:id="@id/android:list" 
+ 		android:layout_width="fill_parent" 
+ 		android:layout_height="fill_parent" 
+ 		android:layout_weight="1.0"
+ 		/> 
+
+	<TextView android:id="@id/android:empty"               
+		android:layout_width="fill_parent"                
+		android:layout_height="fill_parent"       
+		android:gravity="center"
+		android:layout_weight="1.0"
+		android:textSize="18dip"                      
+		android:text="@string/no_items"
+		android:visibility="invisible"/>
+  
+ </LinearLayout>

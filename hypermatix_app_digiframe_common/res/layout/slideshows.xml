@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2011 Hypermatix Limited
+
+     This file can not be used in any way, distributed, or 
+     modified, without the express written permission of Hypermatix Ltd.
+-->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="#ff000000">
+  
+ 	<ListView android:id="@id/android:list" 
+ 		android:layout_width="fill_parent" 
+ 		android:layout_height="wrap_content" 
+ 		android:layout_weight="1.0"
+ 		/> 
+
+	<TextView android:id="@id/android:empty"               
+		android:layout_width="fill_parent"                
+		android:layout_height="fill_parent"       
+		android:gravity="center"                      
+		android:text="@string/no_slideshows"
+		android:layout_weight="1.0"
+		android:textSize="18dip"
+		android:visibility="invisible"/>
+		
+	<LinearLayout 
+		android:id="@+id/buttonBar"
+  		android:layout_width="fill_parent"
+  		android:layout_height="50dip"
+  		android:layout_gravity="bottom"
+  		android:orientation="horizontal"
+  		android:layout_marginTop="5dip">
+		
+	<Button android:id="@+id/create_slideshow"
+		android:layout_width="fill_parent"                
+		android:layout_height="fill_parent"    
+		android:text="@string/create_slideshow"
+		android:textColor="#ffffffff"
+		style="@style/Widget.ImageButton"
+	/>
+	
+	
+	</LinearLayout>
+	
+ </LinearLayout>

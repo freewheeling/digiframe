@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:background="#ff000000"
+    >
+    
+<LinearLayout
+     android:id="@+id/error"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+          <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/error"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>   
+
+<LinearLayout
+     android:id="@+id/progress"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+          <ProgressBar
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:indeterminateOnly="true"
+         android:layout_gravity="center_vertical|center_horizontal"
+         style="@android:style/Widget.ProgressBar.Large"/>
+</LinearLayout>
+
+<LinearLayout
+     android:id="@+id/no_wifi"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+          <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/no_wifi"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+<LinearLayout
+     android:id="@+id/no_card"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+ <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/no_card"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+<LinearLayout
+     android:id="@+id/splash"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+ <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/splash_icon"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+  <ImageView
+    android:orientation="vertical"
+    android:id="@+id/viewstatus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+</ImageView>
+    
+<ViewAnimator 
+    android:orientation="vertical"
+    android:id="@+id/viewanimator"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+</ViewAnimator>
+
+<SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:handle="@+id/drawerHandle"
+        android:content="@+id/contentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="180dip"
+        android:layout_gravity="bottom"
+        android:animateOnClick="false">
+  
+        <com.hypermatix.digiframe.common.DrawerHandleView
+            android:id="@+id/drawerHandle"
+            android:src="@drawable/handle"
+            android:scaleType="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@drawable/handle_bar"/>
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/contentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#cc000000">
+            <TextView android:id="@+id/trackTitle"
+            		android:layout_width="fill_parent"
+            		 android:layout_height="wrap_content"
+            		 android:gravity="center"
+            		 android:layout_marginTop="10dip"
+            		 android:layout_marginLeft="6dip"
+            		 android:layout_marginRight="6dip"
+            		 android:layout_marginBottom="3dip"
+            		 android:ellipsize="marquee"
+        			 android:marqueeRepeatLimit ="marquee_forever"
+            		 android:singleLine="true"
+            		 android:textSize="14dip"
+            		 android:textStyle="bold"
+            		 android:focusable="true"
+        			 android:focusableInTouchMode="true" 
+        			 android:scrollHorizontally="true"
+            										/>
+            <TextView android:id="@+id/trackArtist"
+            		android:layout_width="fill_parent"
+            		 android:layout_height="wrap_content"
+            		 android:gravity="center"
+            		 android:layout_marginLeft="6dip"
+            		 android:layout_marginRight="6dip"
+            		 android:layout_marginBottom="6dip"
+            		 android:ellipsize="marquee"
+        		     android:marqueeRepeatLimit ="marquee_forever"
+            		 android:singleLine="true"
+            		 android:textSize="11dip"
+            		 android:focusable="true"
+        			 android:focusableInTouchMode="true" 
+        			 android:scrollHorizontally="true"
+            										/>
+            <RelativeLayout
+            	xmlns:android="http://schemas.android.com/apk/res/android"
+            	android:id="@+id/sbLayout"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal"
+            	android:layout_marginBottom="6dip">
+            	<TextView android:id="@+id/timeGone"
+	                android:layout_width="wrap_content"
+            		 android:layout_height="wrap_content"
+            		 android:layout_alignParentLeft="true"
+            		 android:layout_marginLeft="6dip"
+            		 android:textSize="10dip"
+            		 android:layout_centerVertical="true"
+            		 android:text="0:00"/>
+	            <SeekBar android:id="@+id/seekBar"
+	                	 android:layout_width="wrap_content"
+	            		 android:layout_height="wrap_content"
+	            		 android:layout_toRightOf="@+id/timeGone"
+	            		 android:layout_toLeftOf="@+id/timeRemaining"
+	            		 android:layout_marginLeft="0dip"
+	            		 android:layout_marginRight="0dip"
+	            		 android:paddingLeft="8dip"
+	            		 android:paddingRight="8dip"
+	            		 android:layout_centerHorizontal="true"
+	            		 android:layout_centerVertical="true"
+	            		 android:maxWidth="50dip"
+	            		 style="@style/Widget.SeekBar"/>
+	            <TextView android:id="@+id/timeRemaining"
+	                android:layout_width="wrap_content"
+            		 android:layout_height="wrap_content"
+            		 android:layout_alignParentRight="true"
+            		 android:layout_marginRight="6dip"
+            		 android:textSize="10dip"
+            		 android:layout_centerVertical="true"
+            		 android:text="0:00"/>
+            </RelativeLayout>
+            
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+
+            <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingTop="6dip"
+            android:gravity="center">
+            
+            <ImageView
+                android:id="@+id/iconMusic"
+                android:src="@drawable/music"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginRight="10dip"
+                />
+                
+            <ImageButton android:id="@+id/btnPlayPauseTrack"
+                android:src="@drawable/pause"
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play/Pause Track"
+                style="@style/Widget.ImageButton"/>
+            <ImageButton android:id="@+id/btnSkipTrack"
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:text="Skip Track"
+                style="@style/Widget.ImageButton"/>
+            
+            <ProgressBar
+                android:id="@+id/processing"
+         		android:layout_width="wrap_content"
+         		android:layout_height="wrap_content"
+         		android:indeterminateOnly="true"
+         		android:layout_gravity="center_vertical|center_horizontal"
+         		style="@android:style/Widget.ProgressBar.Small"
+         		android:layout_marginLeft="8dip"
+         		android:layout_marginRight="8dip"
+         		android:visibility="invisible"/>
+            
+            <ImageButton android:id="@+id/btnPlayPausePic"
+                android:src="@drawable/pause"
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play/Pause Picture"
+                style="@style/Widget.ImageButton"/>
+            <ImageButton android:id="@+id/btnSkipPic"
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:text="Skip Picture"
+                style="@style/Widget.ImageButton"/>
+            <ImageView
+                android:id="@+id/iconPicture"
+                android:src="@drawable/picture"
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="10dip"
+                />
+            </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+</FrameLayout>
+
+ 

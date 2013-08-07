@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:background="#ff000000"
+    >
+    
+<LinearLayout
+     android:id="@+id/error"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+          <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/error"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>   
+
+<LinearLayout
+     android:id="@+id/progress"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+          <ProgressBar
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:indeterminateOnly="true"
+         android:layout_gravity="center_vertical|center_horizontal"
+         style="@android:style/Widget.ProgressBar.Large"/>
+</LinearLayout>
+
+<LinearLayout
+     android:id="@+id/no_wifi"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+          <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/no_wifi"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+<LinearLayout
+     android:id="@+id/no_card"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+ <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/no_card"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+<LinearLayout
+     android:id="@+id/splash"
+     android:visibility="invisible"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center">
+ <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/splash_icon"
+         android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+  <ImageView
+    android:orientation="vertical"
+    android:id="@+id/viewstatus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+</ImageView>
+    
+<ViewAnimator 
+    android:orientation="vertical"
+    android:id="@+id/viewanimator"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+</ViewAnimator>
+
+</FrameLayout>
+
+ 

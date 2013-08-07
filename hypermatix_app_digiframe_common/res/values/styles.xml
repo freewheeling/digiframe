@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.SeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:minHeight">8dip</item>
+        <item name="android:maxHeight">8dip</item>
+        
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:thumb">@drawable/seek_thumb</item>
+        <item name="android:thumbOffset">8dip</item>
+        <!-- 
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:thumbOffset">8dip</item>
+         -->
+    </style>
+    
+    <style name="Widget.ImageButton" parent="@android:style/Widget.ImageButton">
+        <!-- 
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">center</item>
+         -->
+        <item name="android:background">@drawable/btn_default</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help">Help</string>
+    <string name="app_name">DigiFrame</string>
+    <string name="no_devices">* No Media Devices Found *</string>
+    <string name="media_devices">Media Devices</string>
+    <string name="no_items">* No Items *</string>
+    <string name="create_slideshow">Create Slideshow</string>
+    <string name="create">Create</string>
+    <string name="no_slideshows">* No Slideshows *</string>
+    <string name="save_slideshow">Save Slideshow</string>
+    <string name="add_item">Add Content</string>
+    <string name="edit_content">Edit Content</string>
+    <string name="delete_slideshow">Delete Slideshow</string>
+    <string name="playlist_slideshow">Refresh Slideshow Playlist</string>
+    <string name="play_slideshow">Play</string>
+    <string name="window_title_slideshows">DigiFrame - Slideshows</string>
+    <string name="slideshow_name">Enter a Slideshow Name</string>
+    <string name="slideshow_items">Slideshow Content</string>
+    <string name="delete">Delete</string>
+    <string name="preferences">Preferences</string>
+    <string name="play">Play</string>
+    <string name="confirm">"Are you sure?"</string>
+    <string name="slideshow_saved">Slideshow saved</string>
+    <string name="refresh_playlist">Refresh Playlist</string>
+    <string name="num_items">%s items</string>
+    <string name="slideshow_settings_title">Slideshow Preferences</string>
+    <string name="preferences_orientation_title">Match Picture and Device Orientation</string>
+    <string name="preferences_orientation_summary">"When choosing pictures to display, slideshow will only use pictures matching the device's orientation (landscape or portrait). Uncheck to use all pictures in any device orientation."</string>
+	<string name="preferences_picture_fit_default">CROP</string>
+	<string name="preferences_picture_fit_title">Picture Fit</string>
+	<string name="preferences_picture_fit_summary">Select how Pictures should be displayed within screen</string>
+	<string name="searching_for_devices">Searching for Media Devices</string>
+	<string name="zero_items">0 items</string>
+	<string name="more">More</string>
+	<string name="about">About</string>
+	<string name="fetching">Fetching...</string>
+	<string name="name_mandatory">You must enter a name for the Slideshow</string>
+	<string name="dream_settings_title">DayDream Preferences</string>
+	<string name="preferences_dream_slideshow_title">Slideshow</string>
+	<string name="preferences_dream_pictures_only_title">Pictures Only</string>
+	<string name="preferences_dream_pictures_only_summary">Do not play any music in the slideshow when in Daydream mode</string>
+</resources>
